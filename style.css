@@ -250,6 +250,7 @@
 
   .page {
     gap: 49px;
+    background-attachment: fixed;
   }
 
   .main {
@@ -277,6 +278,7 @@
   }
 
   .header {
+    block-size: 100vh;
     min-block-size: 1024px;
     padding: 0 20px 0 0;
     display: grid;
@@ -398,7 +400,12 @@
 
 @media (1024px >= width > 768px) {
 
+  .page {
+    background-attachment: fixed;
+  }
+  
   .header {
+    block-size: 100vh;
     min-block-size: 768px;
     grid-template-rows: min-content 34% 40%;
   }
