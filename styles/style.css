@@ -14,7 +14,6 @@
 
 .header {
   padding: 10px;
-  min-block-size: 657px;
   height: 100vh;
   display: grid;
   grid-template-rows: 11% 25% min-content min-content;
@@ -57,7 +56,7 @@
 .decorated-zone::before {
   content: '';
   position: absolute;
-  bottom: 0px;
+  bottom: 10px;
   left: 10px;
   inline-size: 25px;
   block-size: 25px;
@@ -106,7 +105,7 @@
 .main {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 50px;
 }
 
 .page__title {
@@ -128,11 +127,11 @@
 }
 
 .content-section {
-  padding: 10px 10px 0 10px;
+  padding: 0 10px;
 }
 
 .section__heading {
-  color: var(--accent-color);
+  color: var(--section-heading-color);
   font-size: 18px;
   font-weight: 700;
   line-height: 1.3;
@@ -212,9 +211,11 @@
 }
 
 .footer {
-  height: 100vh;
-  padding: 285px 14px;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 .footer__title {
